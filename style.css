@@ -1,17 +1,31 @@
-#james{
-  background-image: url("teamRocket/library/images/james.jpeg");
+*{
+	margin: 0;
 }
-
-#jessie{
-  background-image: url("teamRocket/library/images/jessie.jpeg");
-
+.topWrapper{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
-
-#giovanni{
-  background-image: url("teamRocket/library/images/giovanni.jpeg");
-
+.topWrapper h1{
+	grid-row: 1/2;
+	grid-column: 1/4;
+	margin: 0 auto;
 }
-
-.trainerName{
-
+.topWrapper div{
+	border: 2px solid;
+}
+.bottomWrapper{
+	margin-top: 20%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr .5fr 1fr .5fr;
+	grid-row-gap: 8%;
+	height: 50vh;
+}
+.bottomWrapper div{
+	border:2px solid;
+}
+#pokemonInfo{
+	grid-row: 2/3;
+	grid-column: 2/5;
 }
