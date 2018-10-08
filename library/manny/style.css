@@ -1,0 +1,339 @@
+*{
+	margin:0;
+	max-width: 915px;
+	font-family: 'Concert One', cursive;
+}
+body{
+	margin:0 auto;
+}
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr .4fr;
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 2%;
+	grid-column-gap: 2%;
+}
+#header{
+	text-align: center;
+	position: relative;
+}
+/*.slick-arrow{
+	height: 10vh;
+	width: 10vw;
+}*/
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+#blastoiseImage{
+	background-image: url('images/blastoise-9.png');
+}
+#arcanineImage{
+	background-image: url('images/Arcanine.png');
+}
+#kadabraImage{
+	background-image: url('images/Kadabra.png');
+}
+.userPokemon{
+	display: grid;
+	grid-template-rows: 7fr .1fr;
+}
+.pokemonImage{
+	height: 20vh;
+	background-size: 100% 100%;
+}
+.pokemonName{
+	font-weight: bold;
+	font-size: 1.7em;
+}
+.pokemonList{
+	width: 30%;
+	height: 25vh;
+	margin:0 auto;
+}
+#pokedexWrapper{
+	background-image: url("images/PokeDex.png");
+	background-size: 100% 100%;
+	max-width: 563px;
+	max-height:385px;
+	min-height:390px;
+	min-width: 421px;
+	height: 51vh;
+	width: 51vw;
+	margin: 0 auto;
+	position:relative;
+}
+#up{
+	position: absolute;
+	top: 72%;
+	left: 35.7%;
+	width: 5%;
+	height: 5.5%;
+}
+#down{
+	position: absolute;
+	top: 83%;
+	left: 35.7%;
+	width: 5%;
+	height: 6%;
+}
+#left{
+	position: absolute;
+	top: 78%;
+	left: 32%;
+	width: 5.5%;
+	height: 5.5%;
+}
+#right{
+	position: absolute;
+	top: 78%;
+	left: 39.5%;
+	width: 5%;
+	height: 5.5%;
+}
+#imageDisplay{
+	position: absolute;
+	height: 28%;
+	width: 30%;
+	top: 31%;
+	left: 10%;
+	background-size: 100% 100%;
+}
+#textDisplay{
+	position: absolute;
+	height: 15%;
+	width: 30%;
+	left: 60.7%;
+	top: 33.4%;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+#buttonName{
+	position: absolute;
+	height: 7.5%;
+	width: 7%;
+	left: 60%;
+	top: 52.5%;
+	font-size: .7em;
+	font-weight: bold;
+	text-align: center;
+}
+#buttonName p{
+	margin-top: 15%;
+}
+#buttonType{
+	position: absolute;
+	height: 6.5%;
+	width: 6.3%;
+	left: 66.8%;
+	top: 52.5%;
+	font-size: .7em;
+	font-weight: bold;
+	text-align: center;
+}
+#buttonType p{
+	margin-top: 15%;
+}
+#buttonStats{
+	position: absolute;
+	height: 6.5%;
+	width: 6.3%;
+	left: 73.1%;
+	top: 52.5%;
+	font-size: .7em;
+	text-align: center;
+	font-weight: bold;
+}
+#buttonStats p{
+	margin-top: 15%;
+}
+#buttonAbilities{
+	position: absolute;
+	height: 6.5%;
+	width: 6.3%;
+	left: 79.8%;
+	top: 52.5%;
+	font-size: .49em;
+	font-weight: bolder;
+	text-align: center;
+}
+#buttonAbilities p{
+	margin-top: 20%;
+}
+.searchFooter{
+	width: 90%;
+	margin-top: 1%;
+	text-align: center;
+	display: grid; 
+	grid-template-columns:1fr 1fr .5fr 1fr;
+}
+#statsWrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5%;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 15%;
+}
+#generalStats{
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: #22C4EA;
+	box-shadow: 1px 3px 2px #1eb0d2, inset 0px 0px 2px white  ;
+	position: relative;
+	display: grid;
+	grid-row: 1fr .1fr;
+}
+#generalStats:active{
+	background-color: #1eb0d2; 
+	box-shadow: 1px 3px 2px white, inset 0px 0px 2px #1eb0d2  ;
+	transform: translate(0, 2px); 
+	transition: all .1s ease-in-out
+}
+#physicalStats{
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: #22C4EA;
+	box-shadow: 1px 3px 2px #1eb0d2, inset 0px 0px 2px white  ;
+	position: relative;
+}
+#physicalStats:active{
+	background-color: #1eb0d2; 
+	box-shadow: 1px 3px 2px white, inset 0px 0px 2px #1eb0d2  ;
+	transform: translate(0, 2px); 
+	transition: all .1s ease-in-out
+}
+#abilities{
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: #22C4EA;
+	box-shadow: 1px 3px 2px #1eb0d2, inset 0px 0px 2px white  ;
+	position: relative;
+}
+#abilities:active{
+	background-color: #1eb0d2; 
+	box-shadow: 1px 3px 2px white, inset 0px 0px 2px #1eb0d2  ;
+	transform: translate(0, 2px); 
+	transition: all .1s ease-in-out
+}
+#nurseJoy{
+	background-image: url('images/Nurse-Joy.png');
+	background-size: 100% 100%;
+}
+#search{
+	grid-column: 2/3;
+}
+#submit{
+	margin-top: 15%;
+	height: 50%;
+	width: 50%;
+}
+/*pokedex button color 22C4EA*/
+.slider {
+	overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.slider.closed {
+	max-height: 0;
+}
+#generalContainer {
+    position: absolute;
+    background: lightblue;
+    font-size: 0;
+    max-width: 249px;
+}
+#physicalContainer {
+    position: absolute;
+    background: lightblue;
+    font-size: 0;
+    max-width: 249px;
+}
+#abilitiesContainer {
+    position: absolute;
+    max-width: 249px;
+    background: lightblue;
+    font-size: 0;
+}
+@media only screen and (min-width: 426px) and (max-width: 768px){
+	#generalContainer{
+    	top: 89%;
+    	width: 26.8vw;
+    }
+    #physicalContainer{
+    	top: 89%;
+    	width: 26.8vw;
+    }
+	#abilitiesContainer{
+    	top: 89%;
+    	width: 26.8vw;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1025px){
+	#generalContainer{
+    	top: 70%;
+    	width: 26.8vw;
+    }
+    #physicalContainer{
+    	top: 70%;
+    	width: 26.8vw;
+    }    
+    #abilitiesContainer{
+    	top: 70%;
+    	width: 26.8vw;
+    }
+}
+@media only screen and (min-width: 1026px){
+    #header{
+    	margin:1% auto;
+    }
+
+    #generalContainer{
+    	top: 103.1%;
+    	width: 25.4vw;
+    }
+    #physicalContainer{
+    	top: 103.1%;
+    	width: 25.4vw;
+    }
+    #abilitiesContainer{
+    	top: 103.1%;
+    	width: 25.4vw;
+    }
+}
+@media only screen and (max-width: 426px){
+    #header{
+    	margin-bottom: 9%;
+    }
+    #generalContainer{
+    	top: 112%;
+    	width: 26.4vw;
+    }
+    #physicalContainer{
+    	top: 112%;
+    	width: 26.4vw;
+    }
+    #abilitiesContainer{
+    	top: 112%;
+    	width: 26.4vw;
+    }
+}
+
+@keyframes slidedown {
+  0%   { height: 0;}
+  10% {height: auto; font-size: .015em;}
+  15% {height: auto; font-size: .1em}
+  100% { height: auto; font-size: 1em; }
+}
+
+@keyframes slideup {
+	0% {height: auto; font-size: 1em;}
+	100% {height: 0; font-size: 0;}
+}
