@@ -1,0 +1,21 @@
+body div{
+	width: 200px;
+	height: 200px;
+/*	border: 2px solid;*/
+	text-align: center;
+}
+.topWrapper{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.topWrapper h1{
+	grid-row: 1/2;
+	grid-column: 1/4;
+}
+.bottomWrapper{
+	margin-top: 20%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
