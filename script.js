@@ -118,10 +118,37 @@ var adamTrainer = new Trainer(nidoran,nidorino,nidoking);
 var adam = document.getElementById('adam');
 var kyle = document.getElementById('kyle');
 var manny = document.getElementById('manny');
-var picture = document.getElementById('pokemonImage')
+var picture = document.getElementById('pokemonImage');
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function addMannyTrainer(){
+	trainerName.innerHTML =  'Manny Giovanni'
+	trainerInfo.innerHTML = 'A slick dude who has an even slicker attitude.'
+}
+
+function blastoise(){
+	pokemon.style.backgroundImage = "url('"+blastoise.sprites[1]+"')"
+}
 
 
 // adam.addEventListener('click',)
