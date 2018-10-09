@@ -296,5 +296,4 @@ function getArcanine(){
 
 
 
-
 // adam.addEventListener('click',)
