@@ -127,6 +127,62 @@ var pokemonInfo = document.getElementById('pokemonInfo');
 var trainerImage = document.getElementById('trainerImage');
 var pokemonName = document.getElementById('pokemonName');
 
+
+}
+function kyleTrainer(){
+	trainerInfo.innerHTML = " "
+	trainerImage.style.backgroundImage = "url('library/images/jessie.jpeg')"
+	trainerInfo.innerHTML = 'Jessie is over james #teamRocket'
+}
+function empoleon() {
+	pokemonInfo.innerHTML = " "
+	pokemonImage.style.backgroundImage = "url('library/images/empoleon.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + empoleon.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + empoleon.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + empoleon.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += empoleon.abilities[i] + " "
+
+}
+function arceus() {
+	pokemonImage.style.backgroundImage = "url('library/images/arceus.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + arceus.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + arceus.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + arceus.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += arceus.abilities[i] + " "
+
+}
+function charizard(){
+	pokemonImage.style.backgroundImage = "url('library/images/charizard.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + charizard.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + charizard.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + charizard.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += charizard.abilities[i] + " "
+}
+
+
+
+
+
+
+
+
+
+
 function adamTrainer(){
 	trainerInfo.innerHTML = ''
 	trainerInfo.innerHTML = 'James is a common member of Team Rocket. James is part of a unit made up of himself, Jessie, and Meowth. He is close friends with the two of them, and is known to make personal sacrifices in order to keep them safe'
