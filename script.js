@@ -146,8 +146,13 @@ function getNidoran(){
 	defense.innerHTML = "Defense: " + nidoran.defense;
 	var abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: "+ nidoran.abilities.join(",");
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> 2afdae0642b4511fb972a0d93dd71edce3de9021
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -266,5 +271,63 @@ function getArcanine(){
 	pokemonInfo.appendChild(abilities);
 }
 
+
+
+
+
+
+
+
+
+function kyleTrainer(){
+	trainerInfo.innerHTML = " "
+	trainerImage.style.backgroundImage = "url('library/images/jessie.jpeg')"
+	trainerInfo.innerHTML = 'Jessie is over james #teamRocket'
+}
+function empoleon() {
+	pokemonInfo.innerHTML = " "
+	pokemonImage.style.backgroundImage = "url('library/images/empoleon.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + empoleon.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + empoleon.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + empoleon.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += empoleon.abilities[i] + " "
+
+		pokemonInfo.appendChild(hp);
+		pokemonInfo.appendChild(attack);
+		pokemonInfo.appendChild(defense);
+		pokemonInfo.appendChild(abilities);
+
+}
+
+function arceus() {
+	pokemonImage.style.backgroundImage = "url('library/images/arceus.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + arceus.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + arceus.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + arceus.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += arceus.abilities[i] + " "
+
+}
+function charizard(){
+	pokemonImage.style.backgroundImage = "url('library/images/charizard.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + charizard.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + charizard.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + charizard.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += charizard.abilities[i] + " "
+}
 
 // adam.addEventListener('click',)
