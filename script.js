@@ -1,31 +1,30 @@
+// 
+// var adam = document.getElementById('adam');
+// var picture = document.getElementById('pokemonImage')
+// // var background = document.getElementsByTagName('body')[0]
+//
+// adam.addEventListener('click', loadScript('library/adam/index.js'))
+//
 
-var adam = document.getElementById('adam');
-var picture = document.getElementById('pokemonImage')
-// var background = document.getElementsByTagName('body')[0]
+// function loadScript(url)
+// {
+//
+// var adam = document.getElementsById('adam');
+// adam.addEventListener('click', function(){
+// 	loadScript('library/manny/script.js');
+// 	setTimeOut(function(){
+// 		adam.innerHTML += blastoise.name;
+// 	},400)
+// })
 
-adam.addEventListener('click', loadScript('library/adam/index.js'))
-
-
-function loadScript(url)
-{
-=======
-var adam = document.getElementsById('adam');
-adam.addEventListener('click', function(){
-	loadScript('library/manny/script.js');
-	setTimeOut(function(){
-		adam.innerHTML += blastoise.name;
-	},400)
-})
-
-function loadScript(url)
-{    
-
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-    head.appendChild(script);
-}
+// function loadScript(url){
+//
+//     var head = document.getElementsByTagName('head')[0];
+//     var script = document.createElement('script');
+//     script.type = 'text/javascript';
+//     script.src = url;
+//     head.appendChild(script);
+// }
 
 
 // window.addEventListener('load',function(){
@@ -34,4 +33,3 @@ function loadScript(url)
 //   background.style.position = 'relative'
 //   background.style.zIndex = '-1'
 // })
-
