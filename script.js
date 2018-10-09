@@ -351,6 +351,6 @@ function charizard(){
 	let  = document.createElement('div')
 	for(let i = 0;i<pokemon.abilitiesl; i++){
 		abilities.innerHTML += charizard.abilities[i] + " "
+	}
 }
-
 // adam.addEventListener('click',)
