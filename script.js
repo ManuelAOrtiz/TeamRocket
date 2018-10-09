@@ -269,7 +269,6 @@ function getArcanine(){
 }
 
 
-<<<<<<< HEAD
 
 
 
@@ -302,6 +301,4 @@ function empoleon() {
 
 }
 
-=======
->>>>>>> 2afdae0642b4511fb972a0d93dd71edce3de9021
 // adam.addEventListener('click',)
