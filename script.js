@@ -270,6 +270,7 @@ function getArcanine(){
 
 
 
+
 function kyleTrainer(){
 	trainerInfo.innerHTML = " "
 	trainerImage.style.backgroundImage = "url('library/images/jessie.jpeg')"
