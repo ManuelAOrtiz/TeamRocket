@@ -320,6 +320,7 @@ function empoleon() {
 	let  = document.createElement('div')
 	for(let i = 0;i<empoleon.abilities.length; i++){
 		abilities.innerHTML += empoleon.abilities[i] + " "
+	}
 
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
@@ -338,6 +339,7 @@ function arceus() {
 	let  = document.createElement('div')
 	for(let i = 0;i<arceus.abilities.length; i++){
 		abilities.innerHTML += arceus.abilities[i] + " "
+	}
 
 }
 function charizard(){
