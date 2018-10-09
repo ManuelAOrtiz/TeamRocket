@@ -128,17 +128,6 @@ var trainerImage = document.getElementById('trainerImage');
 var pokemonName = document.getElementById('pokemonName');
 
 
-
-
-
-
-
-
-
-
-
-
-
 function adamTrainer(){
 	trainerInfo.innerHTML = ''
 	trainerInfo.innerHTML = 'James is a common member of Team Rocket. James is part of a unit made up of himself, Jessie, and Meowth. He is close friends with the two of them, and is known to make personal sacrifices in order to keep them safe'
@@ -213,20 +202,6 @@ function nidoking(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function addMannyTrainer(){
 	trainerInfo.innerHTML =" "
 	trainerImage.style.backgroundImage = "url('library/images/giovanni.jpeg')"
@@ -237,7 +212,8 @@ function addMannyTrainer(){
 
 function getBlastoise(){
 	pokemonInfo.innerHTML = " "
-	pokemon.style.backgroundImage = "url('"+blastoise.sprites[1]+"')"
+	picture.style.backgroundImage = "url('"+blastoise.sprites[1]+"')"
+
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +blastoise.hp;
 	var attack = document.createElement("DIV");
@@ -245,10 +221,9 @@ function getBlastoise(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+blastoise.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<pokemons.abilities;i++){
-		abilities.innerHTML += blastoise.abilities[i] + " "
-	}
+
+	abilities.innerHTML = "Abilites: "+blastoise.abilities.join(",");
+
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -256,7 +231,9 @@ function getBlastoise(){
 }
 function getKadabra(){
 	pokemonInfo.innerHTML = " "
-	pokemon.style.backgroundImage = "url('"+kadabra.sprites[1]+"')"
+
+	picture.style.backgroundImage = "url('"+kadabra.sprites[1]+"')"
+
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +kadabra.hp;
 	var attack = document.createElement("DIV");
@@ -264,10 +241,8 @@ function getKadabra(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+kadabra.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<pokemons.abilities;i++){
-		abilities.innerHTML += kadabra.abilities[i]+ " "
-	}
+
+	abilities.innerHTML = "Abilites: "+kadabra.abilities.join(",");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -275,7 +250,9 @@ function getKadabra(){
 }
 function getArcanine(){
 	pokemonInfo.innerHTML = " "
-	pokemon.style.backgroundImage = "url('"+arcanine.sprites[1]+"')"
+
+	picture.style.backgroundImage = "url('"+arcanine.sprites[1]+"')"
+
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +arcanine.hp;
 	var attack = document.createElement("DIV");
@@ -283,17 +260,14 @@ function getArcanine(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+arcanine.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<pokemons.abilities;i++){
-		abilities.innerHTML += arcanine.abilities[i] + " "
-	}
+
+	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(",");
+
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
 	pokemonInfo.appendChild(abilities);
 }
-
-
 
 
 // adam.addEventListener('click',)
