@@ -317,7 +317,7 @@ function getEmpoleon() {
 	attack.innerHTML = 'attack: ' + empoleon.attack;
 	let defense = document.createElement('div')
 	defense.innerHTML = 'HP: ' + empoleon.hp;
-	let  = document.createElement('div')
+	let abilities = document.createElement('div')
 	for(let i = 0;i<empoleon.abilities.length; i++){
 		abilities.innerHTML += empoleon.abilities[i] + " "
 	}
@@ -336,7 +336,7 @@ function getArceus() {
 	attack.innerHTML = 'attack: ' + arceus.attack;
 	let defense = document.createElement('div')
 	defense.innerHTML = 'HP: ' + arceus.hp;
-	let  = document.createElement('div')
+	let abilities = document.createElement('div')
 	for(let i = 0;i<arceus.abilities.length; i++){
 		abilities.innerHTML += arceus.abilities[i] + " "
 	}
@@ -350,7 +350,7 @@ function geCharizard(){
 	attack.innerHTML = 'attack: ' + charizard.attack;
 	let defense = document.createElement('div')
 	defense.innerHTML = 'HP: ' + charizard.hp;
-	let  = document.createElement('div')
+	let abilities  = document.createElement('div')
 	for(let i = 0;i<charizard.abilities.length; i++){
 		abilities.innerHTML += charizard.abilities[i] + " "
 	}
