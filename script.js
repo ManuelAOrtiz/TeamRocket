@@ -127,14 +127,16 @@ var pokemonInfo = document.getElementById('pokemonInfo');
 var trainerImage = document.getElementById('trainerImage');
 var pokemonName = document.getElementById('pokemonName');
 
-function adamTrainer(){
+
+function adamTrain(){
 	trainerInfo.innerHTML = ''
 	trainerInfo.innerHTML = 'James is a common member of Team Rocket. James is part of a unit made up of himself, Jessie, and Meowth. He is close friends with the two of them, and is known to make personal sacrifices in order to keep them safe'
 	trainerImage.style.backgroundImage = "url(" +'library/images/james.jpeg'+")"
 }
 
-function nidoran(){
-	pokemonImage.style.backgroundImage = nidoran.sprites[1];
+function getNidoran(){
+	pokemonInfo.innerHTML = '';
+	picture.style.backgroundImage = nidoran.sprites[1];
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoran.hp;
 	var attack = document.createElement('div');
@@ -145,14 +147,15 @@ function nidoran(){
 	abilities.innerHTML = "Abilities: "+ nidoran.abilities.join(",");
 
 
-	pokemonInfo.appendChild('hp');
-	pokemonInfo.appendChild('attack');
-	pokemonInfo.appendChild('defense');
-	pokemonInfo.appendChild('abilities');
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
 }
 
-function nidorino(){
-	pokemonImage.style.backgroundImage = nidorino.sprites[1];
+function getNidorino(){
+	pokemonInfo.innerHTML = '';
+	picture.style.backgroundImage = nidorino.sprites[1];
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidorino.hp;
 	var attack = document.createElement('div');
@@ -162,14 +165,15 @@ function nidorino(){
 	var abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: "+ nidorino.abilities.join(",");
 
-	pokemonInfo.appendChild('hp');
-	pokemonInfo.appendChild('attack');
-	pokemonInfo.appendChild('defense');
-	pokemonInfo.appendChild('abilities');
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
 }
 
-function nidoking(){
-	pokemonImage.style.backgroundImage = nidoking.sprites[1];
+function getNidoking(){
+	pokemonInfo.innerHTML = '';
+	picture.style.backgroundImage = nidoking.sprites[1];
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoking.hp;
 	var attack = document.createElement('div');
@@ -179,11 +183,13 @@ function nidoking(){
 	var abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: "+ nidoking.abilities.join(", ");
 
-	pokemonInfo.appendChild('hp');
-	pokemonInfo.appendChild('attack');
-	pokemonInfo.appendChild('defense');
-	pokemonInfo.appendChild('abilities');
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
 }
+
+
 
 
 
@@ -202,6 +208,7 @@ function addMannyTrainer(){
 function getBlastoise(){
 	pokemonInfo.innerHTML = " "
 	picture.style.backgroundImage = "url('"+blastoise.sprites[1]+"')"
+
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +blastoise.hp;
 	var attack = document.createElement("DIV");
@@ -217,7 +224,9 @@ function getBlastoise(){
 }
 function getKadabra(){
 	pokemonInfo.innerHTML = " "
+
 	picture.style.backgroundImage = "url('"+kadabra.sprites[1]+"')"
+
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +kadabra.hp;
 	var attack = document.createElement("DIV");
@@ -227,6 +236,7 @@ function getKadabra(){
 	var abilities = document.createElement("DIV");
 	abilities.innerHTML = "Abilites: "+kadabra.abilities.join(", ");
 
+	abilities.innerHTML = "Abilites: "+kadabra.abilities.join(",");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -234,7 +244,9 @@ function getKadabra(){
 }
 function getArcanine(){
 	pokemonInfo.innerHTML = " "
+
 	picture.style.backgroundImage = "url('"+arcanine.sprites[1]+"')"
+
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +arcanine.hp;
 	var attack = document.createElement("DIV");
@@ -244,6 +256,7 @@ function getArcanine(){
 	var abilities = document.createElement("DIV");
 	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(", ");
 
+	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(",");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
