@@ -109,23 +109,19 @@ var nidoking = new Pokemon(34);
 
 
 var empoleon = new Pokemon(395);
-var somePokemon = new Pokemon(493);
+var arceus = new Pokemon(493);
 var charizard = new Pokemon(6);
-var manny = new Trainer(blastoise, kadabra, arcanine);
-var kyle = new Trainer(empoleon,somePokemon, charizard);
-var adam = new Trainer(nidoran,nidorino,nidoking);
+var mannyTrainer = new Trainer(blastoise, kadabra, arcanine);
+var kyleTrainer = new Trainer(empoleon,arceus, charizard);
+var adamTrainer = new Trainer(nidoran,nidorino,nidoking);
 
 var adam = document.getElementById('adam');
+var kyle = document.getElementById('kyle');
+var manny = document.getElementById('manny');
 var picture = document.getElementById('pokemonImage')
 
-// adam.addEventListener('click',)
 
-$(document).ready(function(){
-  $('.pokemonList').slick({
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear',
-  arrows: true,
-  });
-});
+
+
+
+// adam.addEventListener('click',)
