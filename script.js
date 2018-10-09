@@ -341,6 +341,10 @@ function getArceus() {
 		abilities.innerHTML += arceus.abilities[i] + " "
 	}
 
+		pokemonInfo.appendChild(hp);
+		pokemonInfo.appendChild(attack);
+		pokemonInfo.appendChild(defense);
+		pokemonInfo.appendChild(abilities);
 }
 function geCharizard(){
 	pokemonImage.style.backgroundImage = "url('library/images/charizard.gif')"
@@ -354,5 +358,10 @@ function geCharizard(){
 	for(let i = 0;i<charizard.abilities.length; i++){
 		abilities.innerHTML += charizard.abilities[i] + " "
 	}
+	
+		pokemonInfo.appendChild(hp);
+		pokemonInfo.appendChild(attack);
+		pokemonInfo.appendChild(defense);
+		pokemonInfo.appendChild(abilities);
 }
 // adam.addEventListener('click',)
