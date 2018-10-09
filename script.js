@@ -136,7 +136,8 @@ function adamTrain(){
 
 function getNidoran(){
 	pokemonInfo.innerHTML = '';
-	picture.style.backgroundImage = nidoran.sprites[1];
+	pokemonName.innerHTML = 'Nidoran'
+	picture.style.backgroundImage = "url('"+nidoran.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoran.hp;
 	var attack = document.createElement('div');
@@ -155,7 +156,8 @@ function getNidoran(){
 
 function getNidorino(){
 	pokemonInfo.innerHTML = '';
-	picture.style.backgroundImage = nidorino.sprites[1];
+	pokemonName.innerHTML = 'Nidorino'
+	picture.style.backgroundImage = "url('"+nidorino.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidorino.hp;
 	var attack = document.createElement('div');
@@ -173,7 +175,8 @@ function getNidorino(){
 
 function getNidoking(){
 	pokemonInfo.innerHTML = '';
-	picture.style.backgroundImage = nidoking.sprites[1];
+	pokemonName.innerHTML = 'Nidoking'
+	picture.style.backgroundImage = "url('"+nidoking.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoking.hp;
 	var attack = document.createElement('div');
