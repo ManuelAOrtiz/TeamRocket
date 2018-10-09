@@ -144,10 +144,8 @@ function getNidoran(){
 	var defense = document.createElement('div');
 	defense.innerHTML = "Defense: " + nidoran.defense;
 	var abilities = document.createElement('div');
-	abilities.innerHTML = "Abilities: ";
-	for(let i = 0;i<nidoran.abilities.length; i++){
-		abilities.innerHTML += nidoran.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ nidoran.abilities.join(",");
+
 
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
@@ -165,10 +163,7 @@ function getNidorino(){
 	var defense = document.createElement('div');
 	defense.innerHTML = "Defense: " + nidorino.defense;
 	var abilities = document.createElement('div');
-	abilities.innerHTML = "Abilities: ";
-	for(let i = 0;i<niodrino.abilities.length; i++){
-		abilities.innerHTML += nidorino.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ nidorino.abilities.join(",");
 
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
@@ -186,10 +181,7 @@ function getNidoking(){
 	var defense = document.createElement('div');
 	defense.innerHTML = "Defense: " + nidoking.defense;
 	var abilities = document.createElement('div');
-	abilities.innerHTML = "Abilities: ";
-	for(let i = 0;i<nidoking.abilities.length; i++){
-		abilities.innerHTML += nidoking.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ nidoking.abilities.join(", ");
 
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
@@ -224,9 +216,7 @@ function getBlastoise(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+blastoise.defense;
 	var abilities = document.createElement("DIV");
-
-	abilities.innerHTML = "Abilites: "+blastoise.abilities.join(",");
-
+	abilities.innerHTML = "Abilites: "+blastoise.abilities.join(", ");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -244,6 +234,7 @@ function getKadabra(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+kadabra.defense;
 	var abilities = document.createElement("DIV");
+	abilities.innerHTML = "Abilites: "+kadabra.abilities.join(", ");
 
 	abilities.innerHTML = "Abilites: "+kadabra.abilities.join(",");
 	pokemonInfo.appendChild(hp);
@@ -263,6 +254,7 @@ function getArcanine(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+arcanine.defense;
 	var abilities = document.createElement("DIV");
+	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(", ");
 
 	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(",");
 	pokemonInfo.appendChild(hp);
