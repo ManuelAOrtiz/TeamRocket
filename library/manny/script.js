@@ -101,3 +101,13 @@ var kadabra = new Pokemon(64);
 var arcanine = new Pokemon(59);
 
 var manny = new Trainer(blastoise, kadabra, arcanine);
+
+var nidoran = new Pokemon(32);
+var nidorino = new Pokemon(33);
+var nidoking = new Pokemon(34);
+
+var adam = new Trainer(nidoran,nidorino,nidoking);
+
+var empoleon = new Pokemon(395);
+var somePokemon = new Pokemon(493);
+var charizard = new Pokemon(6)
