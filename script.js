@@ -139,7 +139,7 @@ var pokemonName = document.getElementById('pokemonName');
 
 
 
-function adamTrainer(){
+function getAdamTrainer(){
 	trainerInfo.innerHTML = ''
 	trainerInfo.innerHTML = 'James is a common member of Team Rocket. James is part of a unit made up of himself, Jessie, and Meowth. He is close friends with the two of them, and is known to make personal sacrifices in order to keep them safe'
 	trainerImage.style.backgroundImage = "url(" +'library/images/james.jpeg'+")"
@@ -229,7 +229,7 @@ function getNidoking(){
 
 
 
-function addMannyTrainer(){
+function getMannyTrainer(){
 	trainerInfo.innerHTML =" "
 	trainerImage.style.backgroundImage = "url('library/images/giovanni.jpeg')"
 	trainerInfo.innerHTML =  'Manny Giovanni'
@@ -303,12 +303,12 @@ function getArcanine(){
 
 
 
-function kyleTrainer(){
+function getKyleTrainer(){
 	trainerInfo.innerHTML = " "
 	trainerImage.style.backgroundImage = "url('library/images/jessie.jpeg')"
 	trainerInfo.innerHTML = 'Jessie is over james #teamRocket'
 }
-function empoleon() {
+function getEmpoleon() {
 	pokemonInfo.innerHTML = " "
 	pokemonImage.style.backgroundImage = "url('library/images/empoleon.gif')"
 	let hp = document.createElement('div')
@@ -328,7 +328,7 @@ function empoleon() {
 		pokemonInfo.appendChild(abilities);
 
 }
-function arceus() {
+function getArceus() {
 	pokemonImage.style.backgroundImage = "url('library/images/arceus.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + arceus.hp;
@@ -342,7 +342,7 @@ function arceus() {
 	}
 
 }
-function charizard(){
+function geCharizard(){
 	pokemonImage.style.backgroundImage = "url('library/images/charizard.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + charizard.hp;
