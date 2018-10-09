@@ -208,7 +208,7 @@ function addMannyTrainer(){
 function getBlastoise(){
 	pokemonInfo.innerHTML = " "
 	picture.style.backgroundImage = "url('"+blastoise.sprites[1]+"')"
-
+	pokemonName.innerHTML = blastoise.name;
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +blastoise.hp;
 	var attack = document.createElement("DIV");
@@ -224,7 +224,7 @@ function getBlastoise(){
 }
 function getKadabra(){
 	pokemonInfo.innerHTML = " "
-
+	pokemonName.innerHTML = kadabra.name;
 	picture.style.backgroundImage = "url('"+kadabra.sprites[1]+"')"
 
 	var hp = document.createElement("DIV");
@@ -244,7 +244,7 @@ function getKadabra(){
 }
 function getArcanine(){
 	pokemonInfo.innerHTML = " "
-
+	pokemonName.innerHTML = arcanine.name;
 	picture.style.backgroundImage = "url('"+arcanine.sprites[1]+"')"
 
 	var hp = document.createElement("DIV");
