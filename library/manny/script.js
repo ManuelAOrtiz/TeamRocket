@@ -22,7 +22,7 @@ class Pokemon{
 					that.name = that.getName(result);
 					that.sprites = that.getImage(result);
 					that.types = that.getType(result);
-				}	
+				}
 		})
 	}
 	getImage(result){
@@ -57,7 +57,7 @@ class Pokemon{
 			types.push(result.types[i].type.name)
 		}
 		return types
-	}			
+	}
 }
 
 class Trainer{
