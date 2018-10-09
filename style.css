@@ -14,7 +14,7 @@
 .topWrapper div{
 	/* border: 2px solid; */
 }
-/*.bottomWrapper{
+.bottomWrapper{
 	margin-top: 20%;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
@@ -84,4 +84,3 @@ button{
   /* border: #e4f2f2; */
   /* box-shadow: 2px 2px 2px 2px #E4F2F2; */
 }
-

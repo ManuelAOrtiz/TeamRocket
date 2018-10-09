@@ -120,6 +120,14 @@ var kyle = document.getElementById('kyle');
 var manny = document.getElementById('manny');
 var picture = document.getElementById('pokemonImage');
 
+var leftButt = document.getElementById('left');
+var rightButt = document.getElementById('right');
+var trainerInfo = document.getElementById('trainerInfo');
+var pokemonInfo = document.getElementById('pokemonInfo');
+var trainerImage = document.getElementById('trainerImage');
+var pokemonImage = document.getElementById('pokemonImage');
+
+
 
 
 
@@ -149,8 +157,62 @@ function addMannyTrainer(){
 	trainerInfo.innerHTML = 'A slick dude who has an even slicker attitude.'
 }
 
-function blastoise(){
+function getBlastoise(){
+	pokemonInfo.innerHTML = " "	
 	pokemon.style.backgroundImage = "url('"+blastoise.sprites[1]+"')"
+	var hp = document.createElement("DIV");
+	hp.innerHTML = "HP: " +blastoise.hp;
+	var attack = document.createElement("DIV");
+	attack.innerHTML = "Attack: "+blastoise.attack;
+	var defense = document.createElement("DIV");
+	defense.innerHTML = "Defense: "+blastoise.defense;
+	var abilities = document.createElement("DIV");
+	abilities.innerHTML = "Abilites: ";
+	for(let i = 0;i<pokemons.abilities;i++){
+		abilities.innerHTML += blastoise.abilities[i] + " "
+	}
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
+}
+function getKadabra(){
+	pokemonInfo.innerHTML = " "	
+	pokemon.style.backgroundImage = "url('"+kadabra.sprites[1]+"')"
+	var hp = document.createElement("DIV");
+	hp.innerHTML = "HP: " +kadabra.hp;
+	var attack = document.createElement("DIV");
+	attack.innerHTML = "Attack: "+kadabra.attack;
+	var defense = document.createElement("DIV");
+	defense.innerHTML = "Defense: "+kadabra.defense;
+	var abilities = document.createElement("DIV");
+	abilities.innerHTML = "Abilites: ";
+	for(let i = 0;i<pokemons.abilities;i++){
+		abilities.innerHTML += kadabra.abilities[i]+ " "
+	}
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
+}
+function getArcanine(){
+	pokemonInfo.innerHTML = " "	
+	pokemon.style.backgroundImage = "url('"+arcanine.sprites[1]+"')"
+	var hp = document.createElement("DIV");
+	hp.innerHTML = "HP: " +arcanine.hp;
+	var attack = document.createElement("DIV");
+	attack.innerHTML = "Attack: "+arcanine.attack;
+	var defense = document.createElement("DIV");
+	defense.innerHTML = "Defense: "+arcanine.defense;
+	var abilities = document.createElement("DIV");
+	abilities.innerHTML = "Abilites: ";
+	for(let i = 0;i<pokemons.abilities;i++){
+		abilities.innerHTML += arcanine.abilities[i] + " "
+	}
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
 }
 
 
