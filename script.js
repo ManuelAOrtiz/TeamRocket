@@ -300,7 +300,6 @@ function empoleon() {
 		pokemonInfo.appendChild(abilities);
 
 }
-
 function arceus() {
 	pokemonImage.style.backgroundImage = "url('library/images/arceus.gif')"
 	let hp = document.createElement('div')
