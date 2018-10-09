@@ -16,7 +16,6 @@
 
 
 
-
 class Pokemon{
   constructor(pokeNumber){
     this.pokeNumber = pokeNumber;
@@ -82,21 +81,32 @@ acPokedex.addPokemon(nidoking)
 
 
 function ajax(){
-$.ajax({url: "https://fizal.me/pokeapi/api/" + acPokedex.pokedex[i].pokeNumber + ".json",
+$.ajax({url: "https://fizal.me/pokeapi/api/" + acPokedex.pokedex[32].pokeNumber + ".json",
 // data: {name: searchBar.value},
 success: function(response){
 console.log(response)
-// hookImage(response)
+hookImage(response)
+  constructor(pokeNumber){
+    this.pokeNumber = pokeNumber;
+    this.name;
+    this.move;
+    this.picture;
+    this.stats;
+  }
+
+}
+//
+//
 // hookType(response)
 // hookName(response)
 // hookHp(response)
-  }
 })
 }
+}
 
-// function hookImage(x){
-// picture.style.backgroundImage = "url("+x.sprites.front_default+")"
-// }
+function hookImage(x){
+picture.style.backgroundImage = "url("+x.sprites.front_default+")"
+}
 //
 // function hookName(x){
 // pokemon.innerHTML = x.name;
