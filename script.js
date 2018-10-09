@@ -318,7 +318,7 @@ function empoleon() {
 	let defense = document.createElement('div')
 	defense.innerHTML = 'HP: ' + empoleon.hp;
 	let  = document.createElement('div')
-	for(let i = 0;i<pokemon.abilitiesl; i++){
+	for(let i = 0;i<empoleon.abilities.length; i++){
 		abilities.innerHTML += empoleon.abilities[i] + " "
 
 		pokemonInfo.appendChild(hp);
@@ -336,7 +336,7 @@ function arceus() {
 	let defense = document.createElement('div')
 	defense.innerHTML = 'HP: ' + arceus.hp;
 	let  = document.createElement('div')
-	for(let i = 0;i<pokemon.abilitiesl; i++){
+	for(let i = 0;i<arceus.abilities.length; i++){
 		abilities.innerHTML += arceus.abilities[i] + " "
 
 }
@@ -349,7 +349,7 @@ function charizard(){
 	let defense = document.createElement('div')
 	defense.innerHTML = 'HP: ' + charizard.hp;
 	let  = document.createElement('div')
-	for(let i = 0;i<pokemon.abilitiesl; i++){
+	for(let i = 0;i<charizard.abilities.length; i++){
 		abilities.innerHTML += charizard.abilities[i] + " "
 	}
 }
