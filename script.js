@@ -202,22 +202,6 @@ function getNidoking(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function addMannyTrainer(){
 	trainerInfo.innerHTML =" "
 	trainerImage.style.backgroundImage = "url('library/images/giovanni.jpeg')"
@@ -236,10 +220,8 @@ function getBlastoise(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+blastoise.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<blastiose.abilities.length;i++){
-		abilities.innerHTML += blastoise.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilites: "+blastoise.abilities.join(",");
+
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -255,10 +237,8 @@ function getKadabra(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+kadabra.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<kadabra.abilities.length;i++){
-		abilities.innerHTML += kadabra.abilities[i]+ " "
-	}
+	abilities.innerHTML = "Abilites: "+kadabra.abilities.join(",");
+
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -274,10 +254,7 @@ function getArcanine(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+arcanine.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<arcanine.abilities.length;i++){
-		abilities.innerHTML += arcanine.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(",");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
