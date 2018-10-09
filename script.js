@@ -171,8 +171,10 @@ function adamTrainer(){
 	trainerImage.style.backgroundImage = "url(" +'library/images/james.jpeg'+")"
 }
 
-function nidoran(){
-	pokemonImage.style.backgroundImage = nidoran.sprites[1];
+function getNidoran(){
+	pokemonInfo.innerHTML = '';
+	pokemonName.innerHTML = 'Nidoran'
+	picture.style.backgroundImage = "url('"+nidoran.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoran.hp;
 	var attack = document.createElement('div');
@@ -191,8 +193,10 @@ function nidoran(){
 	pokemonInfo.appendChild('abilities');
 }
 
-function nidorino(){
-	pokemonImage.style.backgroundImage = nidorino.sprites[1];
+function getNidorino(){
+	pokemonInfo.innerHTML = '';
+	pokemonName.innerHTML = 'Nidorino'
+	picture.style.backgroundImage = "url('"+nidorino.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidorino.hp;
 	var attack = document.createElement('div');
@@ -211,8 +215,10 @@ function nidorino(){
 	pokemonInfo.appendChild('abilities');
 }
 
-function nidoking(){
-	pokemonImage.style.backgroundImage = nidoking.sprites[1];
+function getNidoking(){
+	pokemonInfo.innerHTML = '';
+	pokemonName.innerHTML = 'Nidoking'
+	picture.style.backgroundImage = "url('"+nidoking.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoking.hp;
 	var attack = document.createElement('div');
