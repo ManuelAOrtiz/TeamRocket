@@ -14,7 +14,17 @@
 .topWrapper div{
 	/* border: 2px solid; */
 }
-/*.bottomWrapper{
+.pokemon{
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  display: grid;
+  grid-template-rows: 1fr .1fr;
+}
+#pokemonImage{
+  background-size: 100% 100%;
+}
+.bottomWrapper{
 	margin-top: 20%;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
@@ -78,10 +88,11 @@ border-radius: 25%;
   background-position: center;
   background-repeat: no-repeat;
 }
+#trainerImage{
 
+}
 button{
   background-color: #808AC2;
   /* border: #e4f2f2; */
   /* box-shadow: 2px 2px 2px 2px #E4F2F2; */
 }
-

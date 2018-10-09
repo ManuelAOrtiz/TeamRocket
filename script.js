@@ -145,8 +145,13 @@ function getNidoran(){
 	defense.innerHTML = "Defense: " + nidoran.defense;
 	var abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: "+ nidoran.abilities.join(",");
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> 2afdae0642b4511fb972a0d93dd71edce3de9021
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -264,6 +269,7 @@ function getArcanine(){
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -296,4 +302,6 @@ function empoleon() {
 
 }
 
+=======
+>>>>>>> 2afdae0642b4511fb972a0d93dd71edce3de9021
 // adam.addEventListener('click',)
