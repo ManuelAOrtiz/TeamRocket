@@ -314,10 +314,11 @@ function getEmpoleon() {
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + empoleon.hp;
 	let attack = document.createElement('div')
-	attack.innerHTML = 'attack: ' + empoleon.attack;
+	attack.innerHTML = 'Attack: ' + empoleon.attack;
 	let defense = document.createElement('div')
-	defense.innerHTML = 'HP: ' + empoleon.hp;
+	defense.innerHTML = 'Defense: ' + empoleon.defense;
 	let abilities = document.createElement('div')
+	abilities.innerHTML = "Abilities: "
 	for(let i = 0;i<empoleon.abilities.length; i++){
 		abilities.innerHTML += empoleon.abilities[i] + " "
 	}
@@ -333,10 +334,11 @@ function getArceus() {
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + arceus.hp;
 	let attack = document.createElement('div')
-	attack.innerHTML = 'attack: ' + arceus.attack;
+	attack.innerHTML = 'Attack: ' + arceus.attack;
 	let defense = document.createElement('div')
-	defense.innerHTML = 'HP: ' + arceus.hp;
-	let abilities = document.createElement('div')
+	defense.innerHTML = 'Defense: ' + arceus.defense;
+	let abilities = document.createElement('div');
+	abilities.innerHTML = "Abilities: ";
 	for(let i = 0;i<arceus.abilities.length; i++){
 		abilities.innerHTML += arceus.abilities[i] + " "
 	}
@@ -351,14 +353,15 @@ function geCharizard(){
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + charizard.hp;
 	let attack = document.createElement('div')
-	attack.innerHTML = 'attack: ' + charizard.attack;
+	attack.innerHTML = 'Attack: ' + charizard.attack;
 	let defense = document.createElement('div')
-	defense.innerHTML = 'HP: ' + charizard.hp;
-	let abilities  = document.createElement('div')
+	defense.innerHTML = 'Defense: ' + charizard.defense;
+	let abilities  = document.createElement('div');
+	abilities.innerHTML = "Abilities: ";
 	for(let i = 0;i<charizard.abilities.length; i++){
 		abilities.innerHTML += charizard.abilities[i] + " "
 	}
-	
+
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
 		pokemonInfo.appendChild(defense);
