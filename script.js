@@ -118,7 +118,13 @@ var adamTrainer = new Trainer(nidoran,nidorino,nidoking);
 var adam = document.getElementById('adam');
 var kyle = document.getElementById('kyle');
 var manny = document.getElementById('manny');
-var picture = document.getElementById('pokemonImage')
+var picture = document.getElementById('pokemonImage');
+var leftButt = document.getElementById('left');
+var rightButt = document.getElementById('right');
+var trainerInfo = document.getElementById('trainerInfo');
+var pokemonInfo = document.getElementById('pokemonInfo');
+var trainerImage = document.getElementById('trainerImage');
+var pokemonImage = document.getElementById('pokemonImage');
 
 
 
