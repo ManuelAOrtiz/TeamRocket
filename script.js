@@ -301,4 +301,30 @@ function empoleon() {
 
 }
 
+function arceus() {
+	pokemonImage.style.backgroundImage = "url('library/images/arceus.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + arceus.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + arceus.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + arceus.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += arceus.abilities[i] + " "
+
+}
+function charizard(){
+	pokemonImage.style.backgroundImage = "url('library/images/charizard.gif')"
+	let hp = document.createElement('div')
+	hp.innerHTML = 'HP: ' + charizard.hp;
+	let attack = document.createElement('div')
+	attack.innerHTML = 'attack: ' + charizard.attack;
+	let defense = document.createElement('div')
+	defense.innerHTML = 'HP: ' + charizard.hp;
+	let  = document.createElement('div')
+	for(let i = 0;i<pokemon.abilitiesl; i++){
+		abilities.innerHTML += charizard.abilities[i] + " "
+}
+
 // adam.addEventListener('click',)
