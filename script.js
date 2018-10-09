@@ -142,7 +142,10 @@ var picture = document.getElementById('pokemonImage');
 
 
 function addMannyTrainer(){
-	trainerName.innerHTML =  'Manny Giovanni'
+	trainerInfo.innerHTML =" "
+	trainerImage.style.backgroundImage = "url('library/images/giovanni.jpeg')"
+	trainerInfo.innerHTML =  'Manny Giovanni'
+	var extra 
 	trainerInfo.innerHTML = 'A slick dude who has an even slicker attitude.'
 }
 
