@@ -237,6 +237,7 @@ function getMannyTrainer(){
 
 function getBlastoise(){
 	pokemonInfo.innerHTML = " "
+	pokemonName.innerHTML = blastoise.name;
 	picture.style.backgroundImage  = "url('"+blastoise.sprites[1]+"')"
 	pokemon.style.backgroundSize = "100% 100%"
 	var hp = document.createElement("DIV");
@@ -254,6 +255,7 @@ function getBlastoise(){
 }
 function getKadabra(){
 	pokemonInfo.innerHTML = " "
+	pokemonName.innerHTML = kadabra.name;
 	picture.style.backgroundImage  = "url('"+kadabra.sprites[1]+"')"
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +kadabra.hp;
@@ -270,6 +272,7 @@ function getKadabra(){
 }
 function getArcanine(){
 	pokemonInfo.innerHTML = " "
+	pokemonName.innerHTML = arcanine.name;
 	picture.style.backgroundImage  = "url('"+arcanine.sprites[1]+"')"
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +arcanine.hp;
@@ -300,6 +303,7 @@ function getKyleTrainer(){
 }
 function getEmpoleon() {
 	pokemonInfo.innerHTML = " "
+	pokemonName.innerHTML = empoleon.name;
 	picture.style.backgroundImage  = "url('library/images/empoleon.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + empoleon.hp;
@@ -318,6 +322,7 @@ function getEmpoleon() {
 }
 function getArceus() {
 	pokemonInfo.innerHTML = " "
+	pokemonName.innerHTML = arceus.name;
 	picture.style.backgroundImage= "url('library/images/arceus.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + arceus.hp;
@@ -335,6 +340,7 @@ function getArceus() {
 }
 function getCharizard(){
 	pokemonInfo.innerHTML = " "
+	pokemonName.innerHTML = charizard.name;
 	picture.style.backgroundImage  = "url('library/images/charizard.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + charizard.hp;
@@ -363,8 +369,6 @@ function getCharizard(){
 function addGrid(){
  	pokemon.style.height='100%';
  	pokemon.style.width='100%';
- 	pokemon.style.display='grid';
- 	pokemon.style.gridTemplateRows='1fr .1fr';
 
  	var buttonLeft = document.createElement('BUTTON');
  	var buttonRight = document.createElement('BUTTON');

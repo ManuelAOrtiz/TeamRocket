@@ -14,13 +14,10 @@
 .topWrapper div{
 	/* border: 2px solid; */
 }
-/*.pokemon{
-  height: 100%;
-  width: 100%;
-  background-size: 100% 100%;
+.pokemon{
   display: grid;
   grid-template-rows: 1fr .1fr;
-}*/
+}
 #pokemonImage{
   background-image: url('library/images/fullTeamRocket.png');
   background-size: 100% 100%;
@@ -30,7 +27,7 @@
   width: 50vw;
 }
 .bottomWrapper{
-	margin-top: 20%;
+	margin-top: 8%;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr .5fr 1fr .5fr;
