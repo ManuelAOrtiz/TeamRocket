@@ -134,24 +134,44 @@ pokemon.style.backgroundSize = "100% 100%";
 trainerImage.style.backgroundSize = '100% 100%';
 pokemonInfo.style.textAlign = 'center';
 
+adam.addEventListener('click',function(){
+	addGrid();
+	getAdamTrainer();
+	next();
+})
+kyle.addEventListener('click',function(){
+	addGrid();
+	getKyleTrainer();
+	next();
+})
+manny.addEventListener('click',function(){
+	addGrid();
+	getMannyTrainer();
+	next();
+})
 
 
+bottomWrapper.addEventListener('click', function(e){
+	if(e.target.id=='left'){
+		previous();
+	}else if(e.target.id == 'right'){
+		next();
+	}
 
-
-
-
-
+})
 
 
 function getAdamTrainer(){
 	trainerInfo.innerHTML = ''
 	trainerInfo.innerHTML = 'James is a common member of Team Rocket. James is part of a unit made up of himself, Jessie, and Meowth. He is close friends with the two of them, and is known to make personal sacrifices in order to keep them safe'
-	trainerImage.style.backgroundImage = "url(" +'library/images/james.jpeg'+")"
+	trainerImage.style.backgroundImage = "url(library/images/james.jpeg)"
 }
 
 function getNidoran(){
 	pokemonInfo.innerHTML = '';
-	pokemonName.innerHTML = 'Nidoran'
+	var name = document.createElement("DIV");
+	name.innerHTML = nidoran.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage = "url('"+nidoran.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoran.hp;
@@ -161,15 +181,19 @@ function getNidoran(){
 	defense.innerHTML = "Defense: " + nidoran.defense;
 	var abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: "+ nidoran.abilities.join(",");
+	pokemonInfo.appendChild(name);
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
 
 }
 
 function getNidorino(){
 	pokemonInfo.innerHTML = '';
-	pokemonName.innerHTML = 'Nidorino'
+	var name = document.createElement("DIV");
+	name.innerHTML = nidorino.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage = "url('"+nidorino.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidorino.hp;
@@ -180,6 +204,7 @@ function getNidorino(){
 	var abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: "+ nidorino.abilities.join(",");
 
+	pokemonInfo.appendChild(name);
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -188,7 +213,9 @@ function getNidorino(){
 
 function getNidoking(){
 	pokemonInfo.innerHTML = '';
-	pokemonName.innerHTML = 'Nidoking'
+	var name = document.createElement("DIV");
+	name.innerHTML = nidoking.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage = "url('"+nidoking.sprites[1]+"')";
 	var hp = document.createElement('div');
 	hp.innerHTML = "HP: " + nidoking.hp;
@@ -200,6 +227,7 @@ function getNidoking(){
 	abilities.innerHTML = "Abilities: ";
 	abilities.innerHTML = "Abilities: "+ nidoking.abilities.join(",");
 
+	pokemonInfo.appendChild(name);
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -237,7 +265,9 @@ function getMannyTrainer(){
 
 function getBlastoise(){
 	pokemonInfo.innerHTML = " "
-	pokemonName.innerHTML = blastoise.name;
+	var name = document.createElement("DIV");
+	name.innerHTML = blastoise.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage  = "url('"+blastoise.sprites[1]+"')"
 	pokemon.style.backgroundSize = "100% 100%"
 	var hp = document.createElement("DIV");
@@ -248,6 +278,7 @@ function getBlastoise(){
 	defense.innerHTML = "Defense: "+blastoise.defense;
 	var abilities = document.createElement("DIV");
 	abilities.innerHTML = "Abilities: "+ blastoise.abilities.join(",");
+	pokemonInfo.appendChild(name);
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -255,7 +286,9 @@ function getBlastoise(){
 }
 function getKadabra(){
 	pokemonInfo.innerHTML = " "
-	pokemonName.innerHTML = kadabra.name;
+	var name = document.createElement("DIV");
+	name.innerHTML = kadabra.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage  = "url('"+kadabra.sprites[1]+"')"
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +kadabra.hp;
@@ -265,6 +298,7 @@ function getKadabra(){
 	defense.innerHTML = "Defense: "+kadabra.defense;
 	var abilities = document.createElement("DIV");
 	abilities.innerHTML = "Abilities: "+ kadabra.abilities.join(",");
+	pokemonInfo.appendChild(name);
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -272,8 +306,10 @@ function getKadabra(){
 }
 function getArcanine(){
 	pokemonInfo.innerHTML = " "
-	pokemonName.innerHTML = arcanine.name;
 	picture.style.backgroundImage  = "url('"+arcanine.sprites[1]+"')"
+	var name = document.createElement("DIV");
+	name.innerHTML = arcanine.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +arcanine.hp;
 	var attack = document.createElement("DIV");
@@ -282,6 +318,7 @@ function getArcanine(){
 	defense.innerHTML = "Defense: "+arcanine.defense;
 	var abilities = document.createElement("DIV");
 	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(",");
+	pokemonInfo.appendChild(name)
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -303,7 +340,9 @@ function getKyleTrainer(){
 }
 function getEmpoleon() {
 	pokemonInfo.innerHTML = " "
-	pokemonName.innerHTML = empoleon.name;
+	var name = document.createElement("DIV");
+	name.innerHTML = empoleon.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage  = "url('library/images/empoleon.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + empoleon.hp;
@@ -314,6 +353,7 @@ function getEmpoleon() {
 	let abilities = document.createElement('div')
 	abilities.innerHTML = "Abilities: "+ empoleon.abilities.join(",");
 
+		pokemonInfo.appendChild(name);
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
 		pokemonInfo.appendChild(defense);
@@ -322,7 +362,9 @@ function getEmpoleon() {
 }
 function getArceus() {
 	pokemonInfo.innerHTML = " "
-	pokemonName.innerHTML = arceus.name;
+	var name = document.createElement("DIV");
+	name.innerHTML = arceus.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage= "url('library/images/arceus.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + arceus.hp;
@@ -333,6 +375,7 @@ function getArceus() {
 	let abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: "+ arceus.abilities.join(",");
 
+		pokemonInfo.appendChild(name);
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
 		pokemonInfo.appendChild(defense);
@@ -340,7 +383,9 @@ function getArceus() {
 }
 function getCharizard(){
 	pokemonInfo.innerHTML = " "
-	pokemonName.innerHTML = charizard.name;
+	var name = document.createElement("DIV");
+	name.innerHTML = charizard.name.toUpperCase();
+	name.style.fontWeight = 'bold';
 	picture.style.backgroundImage  = "url('library/images/charizard.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + charizard.hp;
@@ -352,6 +397,7 @@ function getCharizard(){
 	abilities.innerHTML = "Abilities: ";
 	abilities.innerHTML = "Abilities: "+ charizard.abilities.join(",");
 
+		pokemonInfo.appendChild(name);
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
 		pokemonInfo.appendChild(defense);
@@ -380,24 +426,128 @@ function addGrid(){
  	buttonRight.style.gridRow = '1/2';
  	buttonRight.style.gridColumn = '2/3';
  	buttonLeft.style.gridColumn = '4/5';
+ 	buttonRight.style.height = '20%';
+ 	buttonLeft.style.height = '20%';
+ 	buttonRight.style.marginTop= '270%';
+ 	buttonLeft.style.marginTop= '270%';
+
 
  	pokemonImage.style.backgroundImage = 'none';
+ 	pokemonImage.style.gridArea = 'none';
  	pokemonImage.style.gridRow = '1/2';
- 	pokemonImage.style.gridColumn = '3/4';
+ 	pokemonImage.style.height = '35vh';
+ 	pokemonImage.style.width = '35vh';
+ 	pokemon.style.gridRow = '1/2';
+ 	pokemon.style.gridColumn = '3/4';
 
- 	bottomWrapper.style.marginTop= '10%'
+ 	bottomWrapper.style.marginTop= '2%'
  	bottomWrapper.style.display= 'grid'
- 	bottomWrapper.style.gridTemplateRows= '1fr 1fr'
- 	bottomWrapper.style.gridTemplateColumns= '1fr .5fr 1fr .5fr'
- 	bottomWrapper.style.gridRowGap= '8%';
- 	bottomWrapper.style.height= '50vh';
-
+ 	bottomWrapper.style.gridTemplateRows= '.8fr 1fr'
+ 	bottomWrapper.style.gridTemplateColumns= '1fr .2fr 1fr .2fr'
+ 	bottomWrapper.style.height= 'auto';
+ 	bottomWrapper.style.textAlign = 'center';
+ 	pokemon.style.display = 'grid';
+ 	pokemonName.style.gridColumn = '2/3'
+ 	pokemonName.style.gridRow = '2/3'
+ 	pokemon.style.textAlign = 'center;'
 
  // #pokemonInfo {
  //    grid-row: 2/3;
  //    grid-column: 2/5;
- pokemonInfo.style.gridRow = '2/3'
- pokemonInfo.style.gridColumn = '2/5'
+	 pokemonInfo.style.gridRow = '2/3'
+	 pokemonInfo.style.gridColumn = '2/5'
 }
 
 
+
+var kyleCounter=0;
+function kylePokemonGroup(kyleCounter){
+	if(kyleCounter==0){
+		getEmpoleon()
+	}
+	if(kyleCounter==1){
+		getArceus()
+	}
+	if(kyleCounter==2){
+		getCharizard()
+	}
+}
+
+var mannyCounter=0;
+function mannyPokemonGroup(mannyCounter){
+	if(mannyCounter==0){
+		getBlastoise();
+	}if(mannyCounter==1){
+		getKadabra();
+	}if(mannyCounter==2){
+		getArcanine();
+	}
+}
+
+var adamCounter = 0;
+function adamPokemonGroup(adamCounter){
+	if(adamCounter==0){
+		getNidoran();
+	}if(adamCounter==1){
+		getNidorino();
+	}if(adamCounter==2){
+		getNidoking();
+	}
+}
+
+
+function next(){
+	if(trainerInfo.innerHTML == 'Jessie is over james #teamRocket'){
+		if(kyleCounter==2){
+			kyleCounter=0	
+		}else{
+			kyleCounter++;
+		}
+		kylePokemonGroup(kyleCounter)
+		
+	}else if(trainerInfo.innerHTML ==  'Manny Giovanni: A slick dude who has an even slicker attitude.'){
+		
+		if(mannyCounter==2){
+			mannyCounter=0
+			
+		}else{
+			mannyCounter++;
+		}	
+		mannyPokemonGroup(mannyCounter);
+	}else if(trainerInfo.innerHTML == 'James is a common member of Team Rocket. James is part of a unit made up of himself, Jessie, and Meowth. He is close friends with the two of them, and is known to make personal sacrifices in order to keep them safe'){
+		
+		if(adamCounter==2){
+			adamCounter=0
+			
+		}else{
+			adamCounter++;
+		}
+		adamPokemonGroup(adamCounter);
+	}
+}
+
+
+function previous(){
+	if(trainerInfo.innerHTML == 'Jessie is over james #teamRocket'){
+		if(kyleCounter==0){
+			kyleCounter=2;
+		}else{
+			kyleCounter--;
+		}
+		kylePokemonGroup(kyleCounter);
+	}else if(trainerInfo.innerHTML ==  'Manny Giovanni: A slick dude who has an even slicker attitude.'){
+		if(mannyCounter==0){
+			mannyCounter=2;
+		}else{
+			mannyCounter--;
+		}
+		mannyPokemonGroup(mannyCounter);
+	}else if(trainerInfo.innerHTML == 'James is a common member of Team Rocket. James is part of a unit made up of himself, Jessie, and Meowth. He is close friends with the two of them, and is known to make personal sacrifices in order to keep them safe'){
+		if(adamCounter==0){
+			adamCounter=2;
+		}else{
+			adamCounter--;
+		}
+		adamPokemonGroup(adamCounter);
+	}
+}
