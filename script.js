@@ -126,9 +126,13 @@ var trainerInfo = document.getElementById('trainerInfo');
 var pokemonInfo = document.getElementById('pokemonInfo');
 var trainerImage = document.getElementById('trainerImage');
 var pokemonName = document.getElementById('pokemonName');
+var pokemon = document.getElementById('pokemon')
+var bottomWrapper = document.getElementById('bottomWrapper')
 
-
-
+picture.style.backgroundSize = '100% 100%';
+pokemon.style.backgroundSize = "100% 100%";
+trainerImage.style.backgroundSize = '100% 100%';
+pokemonInfo.style.textAlign = 'center';
 
 
 
@@ -174,15 +178,12 @@ function getNidorino(){
 	var defense = document.createElement('div');
 	defense.innerHTML = "Defense: " + nidorino.defense;
 	var abilities = document.createElement('div');
-	abilities.innerHTML = "Abilities: ";
-	for(let i = 0;i<pokemon.abilitiesl; i++){
-		abilities.innerHTML += nidorino.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ nidorino.abilities.join(",");
 
-	pokemonInfo.appendChild('hp');
-	pokemonInfo.appendChild('attack');
-	pokemonInfo.appendChild('defense');
-	pokemonInfo.appendChild('abilities');
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
 }
 
 function getNidoking(){
@@ -197,14 +198,12 @@ function getNidoking(){
 	defense.innerHTML = "Defense: " + nidoking.defense;
 	var abilities = document.createElement('div');
 	abilities.innerHTML = "Abilities: ";
-	for(let i = 0;i<pokemon.abilitiesl; i++){
-		abilities.innerHTML += nidoking.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ nidoking.abilities.join(",");
 
-	pokemonInfo.appendChild('hp');
-	pokemonInfo.appendChild('attack');
-	pokemonInfo.appendChild('defense');
-	pokemonInfo.appendChild('abilities');
+	pokemonInfo.appendChild(hp);
+	pokemonInfo.appendChild(attack);
+	pokemonInfo.appendChild(defense);
+	pokemonInfo.appendChild(abilities);
 }
 
 
@@ -232,14 +231,14 @@ function getNidoking(){
 function getMannyTrainer(){
 	trainerInfo.innerHTML =" "
 	trainerImage.style.backgroundImage = "url('library/images/giovanni.jpeg')"
-	trainerInfo.innerHTML =  'Manny Giovanni'
-	var extra
-	trainerInfo.innerHTML = 'A slick dude who has an even slicker attitude.'
+	trainerInfo.innerHTML =  'Manny Giovanni: '
+	trainerInfo.innerHTML += 'A slick dude who has an even slicker attitude.'
 }
 
 function getBlastoise(){
 	pokemonInfo.innerHTML = " "
-	pokemon.style.backgroundImage = "url('"+blastoise.sprites[1]+"')"
+	picture.style.backgroundImage  = "url('"+blastoise.sprites[1]+"')"
+	pokemon.style.backgroundSize = "100% 100%"
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +blastoise.hp;
 	var attack = document.createElement("DIV");
@@ -247,10 +246,7 @@ function getBlastoise(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+blastoise.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<pokemons.abilities;i++){
-		abilities.innerHTML += blastoise.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ blastoise.abilities.join(",");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -258,7 +254,7 @@ function getBlastoise(){
 }
 function getKadabra(){
 	pokemonInfo.innerHTML = " "
-	pokemon.style.backgroundImage = "url('"+kadabra.sprites[1]+"')"
+	picture.style.backgroundImage  = "url('"+kadabra.sprites[1]+"')"
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +kadabra.hp;
 	var attack = document.createElement("DIV");
@@ -266,10 +262,7 @@ function getKadabra(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+kadabra.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<pokemons.abilities;i++){
-		abilities.innerHTML += kadabra.abilities[i]+ " "
-	}
+	abilities.innerHTML = "Abilities: "+ kadabra.abilities.join(",");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -277,7 +270,7 @@ function getKadabra(){
 }
 function getArcanine(){
 	pokemonInfo.innerHTML = " "
-	pokemon.style.backgroundImage = "url('"+arcanine.sprites[1]+"')"
+	picture.style.backgroundImage  = "url('"+arcanine.sprites[1]+"')"
 	var hp = document.createElement("DIV");
 	hp.innerHTML = "HP: " +arcanine.hp;
 	var attack = document.createElement("DIV");
@@ -285,10 +278,7 @@ function getArcanine(){
 	var defense = document.createElement("DIV");
 	defense.innerHTML = "Defense: "+arcanine.defense;
 	var abilities = document.createElement("DIV");
-	abilities.innerHTML = "Abilites: ";
-	for(let i = 0;i<pokemons.abilities;i++){
-		abilities.innerHTML += arcanine.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ arcanine.abilities.join(",");
 	pokemonInfo.appendChild(hp);
 	pokemonInfo.appendChild(attack);
 	pokemonInfo.appendChild(defense);
@@ -310,7 +300,7 @@ function getKyleTrainer(){
 }
 function getEmpoleon() {
 	pokemonInfo.innerHTML = " "
-	pokemonImage.style.backgroundImage = "url('library/images/empoleon.gif')"
+	picture.style.backgroundImage  = "url('library/images/empoleon.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + empoleon.hp;
 	let attack = document.createElement('div')
@@ -318,10 +308,7 @@ function getEmpoleon() {
 	let defense = document.createElement('div')
 	defense.innerHTML = 'Defense: ' + empoleon.defense;
 	let abilities = document.createElement('div')
-	abilities.innerHTML = "Abilities: "
-	for(let i = 0;i<empoleon.abilities.length; i++){
-		abilities.innerHTML += empoleon.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ empoleon.abilities.join(",");
 
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
@@ -330,7 +317,8 @@ function getEmpoleon() {
 
 }
 function getArceus() {
-	pokemonImage.style.backgroundImage = "url('library/images/arceus.gif')"
+	pokemonInfo.innerHTML = " "
+	picture.style.backgroundImage= "url('library/images/arceus.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + arceus.hp;
 	let attack = document.createElement('div')
@@ -338,18 +326,16 @@ function getArceus() {
 	let defense = document.createElement('div')
 	defense.innerHTML = 'Defense: ' + arceus.defense;
 	let abilities = document.createElement('div');
-	abilities.innerHTML = "Abilities: ";
-	for(let i = 0;i<arceus.abilities.length; i++){
-		abilities.innerHTML += arceus.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ arceus.abilities.join(",");
 
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
 		pokemonInfo.appendChild(defense);
 		pokemonInfo.appendChild(abilities);
 }
-function geCharizard(){
-	pokemonImage.style.backgroundImage = "url('library/images/charizard.gif')"
+function getCharizard(){
+	pokemonInfo.innerHTML = " "
+	picture.style.backgroundImage  = "url('library/images/charizard.gif')"
 	let hp = document.createElement('div')
 	hp.innerHTML = 'HP: ' + charizard.hp;
 	let attack = document.createElement('div')
@@ -358,9 +344,7 @@ function geCharizard(){
 	defense.innerHTML = 'Defense: ' + charizard.defense;
 	let abilities  = document.createElement('div');
 	abilities.innerHTML = "Abilities: ";
-	for(let i = 0;i<charizard.abilities.length; i++){
-		abilities.innerHTML += charizard.abilities[i] + " "
-	}
+	abilities.innerHTML = "Abilities: "+ charizard.abilities.join(",");
 
 		pokemonInfo.appendChild(hp);
 		pokemonInfo.appendChild(attack);
@@ -368,3 +352,48 @@ function geCharizard(){
 		pokemonInfo.appendChild(abilities);
 }
 // adam.addEventListener('click',)
+
+
+
+
+// manny.addEventListener('click',)
+
+
+
+function addGrid(){
+ 	pokemon.style.height='100%';
+ 	pokemon.style.width='100%';
+ 	pokemon.style.display='grid';
+ 	pokemon.style.gridTemplateRows='1fr .1fr';
+
+ 	var buttonLeft = document.createElement('BUTTON');
+ 	var buttonRight = document.createElement('BUTTON');
+ 	buttonRight.id = 'left';
+ 	buttonLeft.id = 'right';
+ 	bottomWrapper.appendChild(buttonLeft);
+ 	bottomWrapper.appendChild(buttonRight);
+ 	buttonLeft.style.gridRow = '1/2';
+ 	buttonRight.style.gridRow = '1/2';
+ 	buttonRight.style.gridColumn = '2/3';
+ 	buttonLeft.style.gridColumn = '4/5';
+
+ 	pokemonImage.style.backgroundImage = 'none';
+ 	pokemonImage.style.gridRow = '1/2';
+ 	pokemonImage.style.gridColumn = '3/4';
+
+ 	bottomWrapper.style.marginTop= '10%'
+ 	bottomWrapper.style.display= 'grid'
+ 	bottomWrapper.style.gridTemplateRows= '1fr 1fr'
+ 	bottomWrapper.style.gridTemplateColumns= '1fr .5fr 1fr .5fr'
+ 	bottomWrapper.style.gridRowGap= '8%';
+ 	bottomWrapper.style.height= '50vh';
+
+
+ // #pokemonInfo {
+ //    grid-row: 2/3;
+ //    grid-column: 2/5;
+ pokemonInfo.style.gridRow = '2/3'
+ pokemonInfo.style.gridColumn = '2/5'
+}
+
+
